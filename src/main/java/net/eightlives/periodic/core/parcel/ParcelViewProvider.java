@@ -33,5 +33,5 @@ public interface ParcelViewProvider<T>
      *            the {@link ParcelContainer} in which to show the view
      * @return the Parcel's view
      */
-    public T showView(ParcelContainer container);
+    T showView(ParcelContainer container);
 }

@@ -46,7 +46,7 @@ public interface Parcel
      * 
      * @return data containing information about this Parcel
      */
-    public ParcelData getParcelData();
+    ParcelData getParcelData();
 
     /**
      * Shows this Parcel in the specified {@link ParcelContainer}.
@@ -54,13 +54,13 @@ public interface Parcel
      * @param parcelContainer
      *            the container in which to show this Parcel
      */
-    public void showParcelContent(ParcelContainer parcelContainer);
+    void showParcelContent(ParcelContainer parcelContainer);
 
     /**
      * Notifies this Parcel that it has been selected. This typically indicates
      * that this Parcel's {@link ParcelOpener} has been selected.
      */
-    public void notifyOfSelection();
+    void notifyOfSelection();
 
     /**
      * Adds a listener to be notified when this Parcel becomes visible or
@@ -69,7 +69,7 @@ public interface Parcel
      * @param visibilityListener
      *            listener to be notified
      */
-    public void addParcelVisibilityListener(Consumer<Boolean> visibilityListener);
+    void addParcelVisibilityListener(Consumer<Boolean> visibilityListener);
 
     /**
      * Stops a listener from being notified when this Parcel becomes visible or
@@ -78,5 +78,5 @@ public interface Parcel
      * @param visibilityListener
      *            listener to stop from being notified
      */
-    public void removeParcelVisibilityListener(Consumer<Boolean> visibilityListener);
+    void removeParcelVisibilityListener(Consumer<Boolean> visibilityListener);
 }

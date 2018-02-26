@@ -16,12 +16,12 @@ public interface ParcelOpener
      *            {@code true} if this Parcel opener should be visible;
      *            {@code false} otherwise
      */
-    public void setVisible(boolean isVisible);
+    void setVisible(boolean isVisible);
 
     /**
      * Destroys this {@link ParcelOpener}. It is no longer visible and should no
      * longer be taken into account in any view layout. After this method is
      * called, it should be as if this Parcel opener never existed.
      */
-    public void destroy();
+    void destroy();
 }

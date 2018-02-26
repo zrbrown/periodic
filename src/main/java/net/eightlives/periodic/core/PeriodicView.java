@@ -24,7 +24,7 @@ public interface PeriodicView
     /**
      * Launches and initializes the view framework.
      */
-    public void launchViewFramework();
+    void launchViewFramework();
 
     /**
      * Creates a Parcel opener, a navigation element that opens its intended
@@ -35,7 +35,7 @@ public interface PeriodicView
      *            the data with which to populate the new Parcel opener
      * @return the new {@link ParcelOpener}
      */
-    public ParcelOpener createParcelOpener(ParcelData parcelData);
+    ParcelOpener createParcelOpener(ParcelData parcelData);
 
     /**
      * Returns the {@link ParcelContainer} in which to render the next
@@ -44,7 +44,7 @@ public interface PeriodicView
      * @return the parcel container in which to render the next parcel requested
      *         to be opened
      */
-    public ParcelContainer getNextParcelContainer();
+    ParcelContainer getNextParcelContainer();
 
     /**
      * Adds a listener to be notified of parcel selected events.
@@ -52,7 +52,7 @@ public interface PeriodicView
      * @param parcelSelectedListener
      *            the listener to be notified
      */
-    public void addParcelSelectedListener(Consumer<Long> parcelSelectedListener);
+    void addParcelSelectedListener(Consumer<Long> parcelSelectedListener);
 
     /**
      * Stops a listener from being notified of parcel selected events.
@@ -60,5 +60,5 @@ public interface PeriodicView
      * @param parcelSelectedListener
      *            listener to stop from being notified
      */
-    public void removeParcelSelectedListener(Consumer<Long> parcelSelectedListener);
+    void removeParcelSelectedListener(Consumer<Long> parcelSelectedListener);
 }
